@@ -10,6 +10,9 @@ For your convenience, here is how you could do it in CMD environment.
 1. First compile: gcc gslayer.c
 2. After compilation, to run the program, you would type the following command: a.exe
 
+# How to play
+Input 1-4 to progress through the game and beat the Goblin Lord at Level 10
+
 # Start Menu
 ~~~
 =================
@@ -19,7 +22,7 @@ For your convenience, here is how you could do it in CMD environment.
 - Enter to Play -
 ~~~
 
-# Battle Interface
+# Interface
 ~~~
 Level: 1
 
@@ -34,5 +37,10 @@ Mana: 25/25
 4. Run
 > 
 ~~~
+
+# Inspiration
+Goblin Slayer anime
+
+
 
 
