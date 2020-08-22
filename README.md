@@ -1,5 +1,5 @@
 # GSlayer
-Wrote a Python text and turn based role-playing (RPG) game inspired and based off the Anime "Goblin Slayer" to learn more about game development  
+*GSlayer* is a Python text and turn based role-playing (RPG) game inspired and based off the Anime "Goblin Slayer" to learn more about game development  
   
 Utilized Random Number Generator (RNG) from Python random library to create random values created classes for players and enemies, and used Python os and sys library to clear and update the console with new values printed on the console  
   
