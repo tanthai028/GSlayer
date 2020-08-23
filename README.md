@@ -20,7 +20,6 @@ For your convenience, here is how you could do it in CMD environment.
 ~~~
 
 # Interface
-Example interface
 ~~~
 Level: 1
 
