@@ -4,7 +4,7 @@ import os, sys, random, time
 
 class gslayer():
   def __init__(self):
-    self.name = 'Goblin S'
+    self.name = 'Goblin Slayer'
     self.lvl = 1
     self.exp = 0
     self.maxexp = 12
