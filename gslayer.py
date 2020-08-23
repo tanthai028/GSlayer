@@ -8,8 +8,8 @@ class gslayer():
     self.lvl = 1
     self.exp = 0
     self.maxexp = 12
-    self.hp = 1000
-    self.maxhp = 1000
+    self.hp = 100
+    self.maxhp = 100
     self.mana = 25
     self.maxmana = 25
     self.baseattack = 10
@@ -39,7 +39,7 @@ class goblinshaman():
     self.hp = 40
     self.maxhp = 40
     self.baseattack = 10
-    self. lvl = 0
+    self.lvl = 0
 
 class goblinchampion():
   def __init__(self):
@@ -175,7 +175,7 @@ def battle():
   global stabbed, assassinated, smited, hppotused, manapotused
 
   os.system('clear')
-  print('Level: {}\n'.format(level))
+  print('Floor: {}\n'.format(floor))
   print('Lv. {}{:15}Lv. {}'.format(gslayer.lvl , '', enemy.lvl))
   print('{:20}{:20}'.format(gslayer.name, enemy.name))
   print('HP:{:3}/{:<3}{:10}HP:{:3}/{:<3}'.format(gslayer.hp, gslayer.maxhp, '', enemy.hp, enemy.maxhp))
@@ -232,7 +232,7 @@ def postbattle():
     sys.exit()
 
   elif enemy.hp <= 0:
-    if enemy == goblin and level == 1:
+    if enemy == goblin and floor == 1:
       gslayer.exp += gslayer.maxexp
     elif enemy == goblin:
       gslayer.exp += int(gslayer.maxexp/3)
@@ -328,7 +328,7 @@ def levelup():
     elif gslayer.lvl == 5:
       skillslist[2] = 'Assassinate'
       print("You learned 'Assassinate'!")
-    print('Current level: {}'.format(gslayer.lvl))
+    print('Current floor: {}'.format(gslayer.lvl))
     input('\nEnter to continue...')
 
   levels()
@@ -336,30 +336,30 @@ def levelup():
 # Levels 1-15
 def levels():
   global enemy 
-  global level
-  level += 1
+  global floor
+  floor += 1
 
-  if 1 <= level <= 3:
+  if 1 <= floor <= 3:
     enemy = goblin
-  elif 4 <= level <= 6:
+  elif 4 <= floor <= 6:
     randomenemy = random.randint(1,4) 
     if 1 <= randomenemy <= 3:
       enemy = goblinshaman
     else:
       enemy = goblin 
-  elif 7 <= level <= 9:
+  elif 7 <= floor <= 9:
     enemy = goblinchampion
-  elif level == 10:
+  elif floor == 10:
     enemy = goblinlord
-  elif level > 10:
+  elif floor > 10:
   	os.system('clear')  
   	print('Victory!')
   	exit()
   
-  if (1 or 4 or 7 or 10) == level: 
+  if (1 or 4 or 7 or 10) == floor: 
     enemy.lvl = 1
   
-  elif (1 or 4 or 7) != level:
+  elif (1 or 4 or 7) != floor:
     chance = random.randint(1,2)
     enemy.hp = enemy.basehp
     enemy.maxhp = enemy.hp
@@ -389,7 +389,7 @@ CURSOR_UP_ONE = '\x1b[1A'
 ERASE_LINE = '\x1b[2K'
 
 skillslist = ['Not Learned', 'Not learned', 'Not Learned', 'Back']
-level = 0
+floor = 0
 
 stabbed, assassinated, smited = False, False, False
 hppotused, manapotused = False, False
