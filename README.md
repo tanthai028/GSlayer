@@ -3,7 +3,7 @@
   
 Utilized Random Number Generator (RNG) from Python random library to create random values created classes for players and enemies, and used Python os and sys library to clear and update the console with new values printed on the console  
   
-
+![](gslayer.gif)
 # Usage
 For your convenience, here is how you could do it in CMD environment.
 
@@ -21,7 +21,7 @@ For your convenience, here is how you could do it in CMD environment.
 
 # Interface
 ~~~
-Level: 1
+Floor: 1
 
 Lv. 1               Lv. 1
 Goblin Slayer       Goblin              
