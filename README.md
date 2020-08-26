@@ -7,8 +7,8 @@ Utilized Random Number Generator (RNG) from Python random library to create rand
 # Usage
 For your convenience, here is how you could do it in CMD environment.
 
-1. First compile: gcc gslayer.c
-2. After compilation, to run the program, you would type the following command: a.exe
+1. Go to directory or folder containing the file
+2. Type main.c
 
 # Start Menu
 ~~~
